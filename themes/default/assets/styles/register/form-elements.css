@@ -1,0 +1,427 @@
+
+input[type="text"], 
+input[type="password"], 
+textarea, 
+textarea.form-control {
+	height: 40px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 44px;
+    color: #888;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+    /* min-width:250px; */
+}
+
+select.form-control{
+    height: 40px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 44px;
+    color: #888;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    /* min-width:250px; */
+}
+
+
+fieldset {
+    padding: 15px;
+}
+
+textarea, 
+textarea.form-control {
+	height: 90px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	line-height: 30px;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+textarea:focus, 
+textarea.form-control:focus {
+	outline: 0;
+	background: #fff;
+    border: 1px solid #ccc;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder, 
+textarea:-moz-placeholder, textarea.form-control:-moz-placeholder { color: #888; }
+
+input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, 
+textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { color: #888; }
+
+input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
+
+label { font-weight: 300; }
+
+
+button.btn {
+	min-width: 80px;
+	height: 40px;
+    margin: 0;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 40px;
+    color: #fff;
+    -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+    text-shadow: none;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+button.btn:hover { opacity: 0.6; color: #fff; }
+button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+button.btn:focus,
+button.btn:active:focus,
+button.btn.active:focus { outline: 0; opacity: 0.6; color: #fff; }
+
+button.btn.btn-next,
+button.btn.btn-next:focus,
+button.btn.btn-next:active:focus, button.btn.btn-next.active:focus { background: #428BCA; }
+
+button.btn.btn-submit,
+button.btn.btn-submit:focus,
+button.btn.btn-submit:active:focus, button.btn.btn-submit.active:focus { background: #428BCA; }
+
+button.btn.btn-previous,
+button.btn.btn-previous:focus,
+button.btn.btn-previous:active:focus, button.btn.btn-previous.active:focus { 
+  background: transparent;
+  color: #428BCA;
+  font-weight: 1000;}
+
+
+.container-radio input:checked~.checkmark:after {
+    display: block;
+}
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.container-radio .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container-radio {
+    display: inline;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 400;
+    padding-top: 3px;
+    margin-right: 20px;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container-radio input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.container-radio input:checked~.pink {
+    background-color: #EC407A;
+}
+
+
+/* Checkbox */
+/* The container */
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 15px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkmark */
+  .checkmark-checkbox {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-checkbox:hover input ~ .checkmark-checkbox {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-checkbox input:checked ~ .checkmark-checkbox {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark-checkbox/indicator (hidden when not checked) */
+  .checkmark-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark-checkbox when checked */
+  .container-checkbox input:checked ~ .checkmark-checkbox:after {
+    display: block;
+  }
+  
+  /* Style the checkmark-checkbox/indicator */
+  .container-checkbox .checkmark-checkbox:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  /* Login */
+
+/* Checkbox */
+/* The container */
+.container-checkbox-login {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+    padding-left: 33px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-checkbox-login input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkmark */
+  .checkmark-checkbox {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-checkbox-login:hover input ~ .checkmark-checkbox {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-checkbox-login input:checked ~ .checkmark-checkbox {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark-checkbox/indicator (hidden when not checked) */
+  .checkmark-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark-checkbox when checked */
+  .container-checkbox-login input:checked ~ .checkmark-checkbox:after {
+    display: block;
+  }
+  
+  /* Style the checkmark-checkbox/indicator */
+  .container-checkbox-login .checkmark-checkbox:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* end Login */
+
+span#message {
+    font-size: 14px;
+}
+
+  .kotak_login{
+    width: 30%;
+    background: white;
+    margin:auto;
+    display:table;
+    text-align: center;
+    max-width:30%;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .kotak_login{
+        max-width:40%;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .kotak_login{
+        max-width:60%;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .kotak_login{
+        max-width:90%;
+        width: 90%;
+    }
+    .container-checkbox{
+        font-size: 14px;
+    }
+    .title-pluugins{
+        font-size:14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .kotak_login{
+        max-width:100%;
+        width: 100%;
+    }
+    .container-checkbox{
+        font-size: 14px;
+    }
+    .title-pluugins{
+        font-size:14px;
+    }
+}
+
+
+.kotak_register{
+  width:40%;
+  background: white;
+  margin:auto;
+  display:table;
+  text-align: center;
+  max-width:40%;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .kotak_register{
+      max-width:60%;
+      width:60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .kotak_register{
+      max-width:70%;
+      width:70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .kotak_register{
+      max-width:90%;
+      width:90%;
+  }
+  .container-checkbox{
+      font-size: 14px;
+  }
+  .title-pluugins{
+      font-size:14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .kotak_register{
+      max-width:100%;
+      width:100%;
+  }
+  .container-checkbox{
+      font-size: 14px;
+  }
+  .title-pluugins{
+      font-size:14px;
+  }
+}

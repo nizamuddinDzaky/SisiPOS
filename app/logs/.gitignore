@@ -1,0 +1,6 @@
+*
+!.gitignore
+!index.html
+!/db_updates
+!/updates
+!/backups

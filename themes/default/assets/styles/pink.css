@@ -1,0 +1,389 @@
+/*
+Copyright (c) 2018 adminSISI.
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License v1.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html
+
+Contributors:
+   adminSISI - initial API and implementation and/or initial documentation
+*/
+/* 
+    Created on : Feb 22, 2018, 9:53:13 AM
+    Author     : adminSISI
+*/
+
+/* Optional Light Navigation 
+=================================================================== */
+#content, #content:before { border-left: none !important; }
+#content.sidebar-minified {
+    border-left: 40px solid #e9ebec !important;
+}
+.navbar, a.navbar-brand span, .header-nav a.btn, .header-nav a.btn.account {
+/*    background: #ff80bf;*/
+background: #ff80bf;
+    color: #FFF !important;
+}
+.header-nav a.btn, .header-nav a.btn.cart {
+/*    background: #ff4da6;*/
+    background: #ff4da6;
+}
+.bnav, .navbar #search input, .navbar #search i,footer  {
+    background: #e9ebec;
+    color: #282b2e !important;
+}
+.navbar #search {
+    background: #e9ebec;
+    border: 1px solid #ff80bf;
+}
+.header-nav a.btn{
+    border-left: 1px solid #ff80bf;
+}
+
+footer {
+    border-top: 1px solid #dbdee0;
+}
+.header-nav a.btn:hover,
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+/*    background: #ff4da6;*/
+    background:  #ff1a8c;
+}
+a#main-menu-toggle {
+  background: #e9ebec;
+}
+a#main-menu-toggle.close {
+  opacity: 1;
+  background: #282b2e !important;
+  padding: 10px 13px !important;
+}
+a#main-menu-act {
+  border-bottom: 1px solid #dbdee0;
+}
+
+a#main-menu-act i {
+    background: #ced1d4;
+    color: #282b2e;
+    border-bottom: 1px solid #dbdee0;
+}
+a#main-menu-act i:hover {
+    background: #ced1d4;
+    color: #FFF;
+}
+.nav.main-menu > li.active > a:hover {
+    background: #ff1a8c;
+    color: white;
+    border-color: #428BCA;
+    cursor: default;
+}
+a#main-menu-min i:hover {
+  background: #ff1a8c;
+  color: #6f7880;
+}
+#sidebar-left {
+    background: #e9ebec; 
+}
+.lt td.sidebar-con { 
+    background-color: #e9ebec;
+    border-right: 1px solid #dbdee0;
+}
+.nav.main-menu > li {
+  margin-top: -1px;
+  border-bottom: 1px solid #dbdee0;
+}
+.nav.main-menu > li > a,
+.nav.main-menu > li > ul > li > a,
+.nav.main-menu > li > ul > li > ul > li > a,
+.nav.main-menu > li > ul > li > ul > li > ul > li > a {
+  color: #7c848d;
+  border-bottom: 1px solid #dbdee0;
+  background: #e9ebec;
+}
+.nav.main-menu > li:first-child > a {
+    border-right: 1px solid #dbdee0;
+}
+.nav.main-menu > li > a .chevron,
+.nav.main-menu > li > ul > li > a .chevron,
+.nav.main-menu > li > ul > li > ul > li > a .chevron,
+.nav.main-menu > li > ul > li > ul > li > ul > li > a .chevron {
+  color: #b2b8bd !important;
+}
+.nav.main-menu > li > a .chevron.closed:after,
+.nav.main-menu > li > ul > li > a .chevron.closed:after,
+.nav.main-menu > li > ul > li > ul > li > a .chevron.closed:after,
+.nav.main-menu > li > ul > li > ul > li > ul > li > a .chevron.closed:after {
+  color: #b2b8bd !important;
+}
+.nav.main-menu > li > a > i,
+.nav.main-menu > li > ul > li > a > i {
+  border-right: none;
+}
+.nav.main-menu > li > ul > li > a {
+  background: #e4e5e7;
+}
+.nav.main-menu > li > ul > li > ul > li > a {
+  background: #e1e3e5;
+}
+.nav.main-menu > li > ul > li > ul > li > ul > li > a {
+  background: #dee0e2;
+}
+.nav.main-menu > li > a:hover,
+.nav.main-menu > li > ul > li > a:hover,
+.nav.main-menu > li > ul > li > ul > li > a:hover,
+.nav.main-menu > li > ul > li > ul > li > ul > li > a:hover {
+  background: #ff1a8c;
+  border-bottom: 1px solid #dbdee0;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.nav.main-menu > li > a:hover,
+.nav.main-menu > li > ul > li > a:hover {
+  background: #ff1a8c;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.nav.main-menu > li > ul > li.active > a,
+.nav.main-menu > li > ul > li > ul > li.active > a,
+.nav.main-menu > li > ul > li > ul > li > ul > li.active > a {
+  background: #ff1a8c;
+}
+.nav.main-menu > li.active > a > i {
+  border-right: 1px solid #ff80bf;
+}
+.nav.main-menu > li > ul > li.active > a > i,
+.nav.main-menu > li > ul > li > ul > li.active > a > i,
+.nav.main-menu > li > ul > li > ul > li > ul > li.active > a > i {
+  color: #7C848D;
+}
+.nav.main-menu > li.active > a:hover,
+.nav.main-menu > li > ul > li.active > a:hover {
+  border: none;
+  color: white;
+}
+.nav.main-menu > li.active > a:hover > i,
+.nav.main-menu > li > ul > li.active > a:hover > i {
+  color: white;
+}
+#sidebar-left.minified .sidebar-nav li {
+  border: 0;
+}
+#sidebar-left.minified .sidebar-nav li i {
+  border-bottom: 1px solid #dbdee0;
+}
+#sidebar-left.minified .sidebar-nav li ul i {
+  border-bottom: 0;
+}
+#sidebar-left.minified .sidebar-nav li > ul > li > a > i {
+  border-right: 0;
+}
+#sidebar-left.minified .sidebar-nav > ul > li > a .text {
+  background: #e9ebec;
+  border: 1px solid #dbdee0;
+}
+#sidebar-left.minified .sidebar-nav > ul > li:hover > a .text {
+  background: #c8ccd0;
+  border: 1px solid #c8ccd0;
+  color: white;
+  margin-top: 0;
+}
+#sidebar-left.minified .sidebar-nav > ul > li:hover > ul {
+  top: 38px;
+  background: #e9ebec;
+  border: 1px solid #dbdee0;
+  border-bottom: none;
+}
+.nav.main-menu > li.active > a, .nav.main-menu > li.active > a > i, #sidebar-left.minified .sidebar-nav > ul > li.active > a .text {
+    background: #ff80bf;
+    color: white;
+    border-color: #ff80bf;
+}
+.nav.main-menu > li > ul > li.active > a,
+.nav.main-menu > li > ul > li > ul > li.active > a,
+.nav.main-menu > li > ul > li > ul > li > ul > li.active > a {
+    background: #dbdee0;
+    border-color: #dbdee0;
+    color: #7C848D;
+}
+.wobblebar-loader:not(:required){
+    background: #ff80bf;
+}
+
+
+#SLData_wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #428BCA !important;
+}
+
+#SLData_wrapper::-webkit-scrollbar-thumb:hover {
+  background: #3276B1 !important; 
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+border-radius: 10px;
+background-color: #F5F5F5;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color:#ff80bf !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1a8c !important; 
+}
+
+
+
+.table-responsive.display.nowrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #428BCA !important;
+}
+
+.table-responsive.display.nowrap::-webkit-scrollbar-thumb:hover {
+  background: #3276B1 !important; 
+}
+
+
+/* MOZILA */
+
+/* width */
+::-moz-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+  height: 10px;
+}
+
+/* Track */
+::-moz-scrollbar-track {
+-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+border-radius: 10px;
+background-color: #F5F5F5;
+}
+ 
+/* Handle */
+::-moz-scrollbar-thumb {
+border-radius: 10px;
+-moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color:#ff80bf !important;
+}
+
+/* Handle on hover */
+::-moz-scrollbar-thumb:hover {
+  background: #ff1a8c !important; 
+}
+
+
+
+.table-responsive.display.nowrap::-moz-scrollbar-thumb {
+  border-radius: 10px;
+  -moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #428BCA !important;
+}
+
+.table-responsive.display.nowrap::-moz-scrollbar-thumb:hover {
+  background: #3276B1 !important; 
+}
+
+/* END MOZILA */
+
+/* Opera */
+
+/* width */
+::-o-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+  height: 10px;
+}
+
+/* Track */
+::-o-scrollbar-track {
+-o-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+border-radius: 10px;
+background-color: #F5F5F5;
+}
+ 
+/* Handle */
+::-o-scrollbar-thumb {
+border-radius: 10px;
+-o-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color:#ff80bf !important;
+}
+
+/* Handle on hover */
+::-o-scrollbar-thumb:hover {
+  background: #ff1a8c !important; 
+}
+
+
+
+.table-responsive.display.nowrap::-o-scrollbar-thumb {
+  border-radius: 10px;
+  -o-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #428BCA !important;
+}
+
+.table-responsive.display.nowrap::-o-scrollbar-thumb:hover {
+  background: #3276B1 !important; 
+}
+
+/* Opera */
+
+
+/* MS */
+
+/* width */
+::-ms-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+  height: 10px;
+}
+
+/* Track */
+::-ms-scrollbar-track {
+-ms-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+border-radius: 10px;
+background-color: #F5F5F5;
+}
+ 
+/* Handle */
+::-ms-scrollbar-thumb {
+border-radius: 10px;
+-ms-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color:#ff80bf !important;
+}
+
+/* Handle on hover */
+::-ms-scrollbar-thumb:hover {
+  background: #ff1a8c !important; 
+}
+
+
+
+.table-responsive.display.nowrap::-ms-scrollbar-thumb {
+  border-radius: 10px;
+  -ms-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #428BCA !important;
+}
+
+.table-responsive.display.nowrap::-ms-scrollbar-thumb:hover {
+  background: #3276B1 !important; 
+}
+
+/* END MS */

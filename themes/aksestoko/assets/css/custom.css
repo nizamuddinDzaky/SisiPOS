@@ -1,0 +1,10 @@
+.modal-check-phone {
+    z-index: 10000;
+    background: #0000008a;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}

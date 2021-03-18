@@ -1,0 +1,77 @@
+<style type="text/css">
+    .sitename{
+        font-weight: bold;
+        font-size: 28px;
+    }
+    .title{
+    	color: rgb(36, 63, 238);
+    	font-size: 20px;
+    }
+    .detail {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .left{
+     	text-align: left;
+    }
+    .btn-success {
+	    color: #fff;
+	    background-color: #5cb85c;
+	    border-color: #4cae4c;
+	}
+	.btn-danger {
+	    color: #fff;
+	    background-color: #d9534f;
+	    border-color: #4cae4c;
+	}
+	.btn {
+		display: inline-block;
+	    padding: 6px 12px;
+	    margin-bottom: 0;
+	    font-size: 16px;
+	    font-weight: bold;
+	    line-height: 1.42857143;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    -ms-touch-action: manipulation;
+	    touch-action: manipulation;
+	    cursor: pointer;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    background-image: none;
+	    border: 1px solid transparent;
+	    border-radius: 4px;
+	}
+</style>
+
+<h3 class="sitename">{site_name}</h3>
+<h4 class="title">Subscription Reminder</h4>
+<p> Hello,  {company_name}</p>
+<p>Your subscription will expire :  <b>{expire_days} later </b></p>
+<table class="detail">
+	<tr>
+		<th class="left"> Name </th>
+		<th> : </th>
+		<th class="left"> {plan_name} </th>
+	</tr>
+	<tr>
+		<th class="left"> Expired Date </th>
+		<th> : </th>
+		<th class="left"> {expired_date} </th>
+	</tr>
+</table>
+
+<p> If you want to renewal, please click the following button</p>
+<p> <a class='btn btn-success' href="{client_link}">Go to Subscription</a> </p>
+<p> or You can paste this code below in your address bar if the button not working</p>
+<p> {client_link}</p>
+
+
+<br>
+Best regards,
+<br>
+{site_name}
+<br>
